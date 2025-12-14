@@ -16,7 +16,7 @@ export default function CandleStickChart() {
     const series = chart.addSeries(CandlestickSeries);
 
     axios
-      .get("http://127.0.0.1:8000/ohlc")
+      .get("https://trading-dashboard-gjwm.onrender.com/ohlc")
       .then((res) => {
         console.log("DATA FROM API:", res.data);
         series.setData(res.data);

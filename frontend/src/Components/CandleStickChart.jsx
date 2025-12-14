@@ -13,7 +13,6 @@ export default function CandleStickChart() {
       height: ref.current.clientHeight,
     });
 
-    // ✅ v4+ correct API
     const series = chart.addSeries(CandlestickSeries);
 
     axios
